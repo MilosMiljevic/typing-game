@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { lorem, random } from 'faker';
+import { loremIpsum } from 'lorem-ipsum';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +7,7 @@ import { lorem, random } from 'faker';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  randomText = lorem.sentence();
+  randomText = loremIpsum();
   enteredText = '';
 
   onInput(value: string) {
